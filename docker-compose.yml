@@ -1,0 +1,73 @@
+version: "3.9"
+services:
+  ##unless-stopped docker-compose up  --remove-orphans
+  mysql-war:
+    image: mysql:8.0.28
+    container_name: mysql-spring-war
+    restart: unless-stopped
+    volumes:
+      - db:/var/lib/mysql
+    ports:
+      - 3307:3307
+    environment:
+      MYSQL_ROOT_PASSWORD: mypassword
+      MYSQL_DATABASE: agentdb
+    networks:
+      - spring-boot-net
+
+  spring-boot-mysql-war:
+    image: spring-boot-mysql-war:latest
+    container_name: spring-boot-mysql-war-container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3101:3101
+    depends_on:
+      - mysql-war
+    networks:
+      - spring-boot-net
+
+
+volumes:
+  db:
+networks:
+  spring-boot-net:
+    driver: bridge
+
+
+
+#
+# summary
+#To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
+# docker-compose up -d
+# produced:
+#
+# docker ps
+# CONTAINER ID   IMAGE                        COMMAND                  CREATED          STATUS          PORTS      NAMES
+#46dd30ca853b   frontend-encryption:latest   "java -jar /frontend…"   28 seconds ago   Up 27 seconds   8080/tcp    frontend-encryption-container
+#
+#
+# docker images
+# REPOSITORY                                TAG              IMAGE ID       CREATED         SIZE
+# frontend-encryption                       latest           9697801bf891   30 hours ago    237MB
+#
+# docker-compose stop
+#
+# docker-compose up
+# spring application really started
+#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
