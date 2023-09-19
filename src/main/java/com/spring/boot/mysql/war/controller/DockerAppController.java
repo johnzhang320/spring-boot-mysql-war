@@ -52,10 +52,10 @@ public class DockerAppController {
 
     @GetMapping("/findByEmail/{email}")
     @ResponseStatus(HttpStatus.OK)
-    public AgentTable findUsersByEmail(@PathVariable String email) {
-        AgentTable agentTable= agentTableRepository.findAgentTableByUserName(email).orElseThrow(
+    public List<AgentTable> findUsersByEmail(@PathVariable String email) {
+        List<AgentTable> agentTableList= agentTableRepository.findAgentTableByEmailAddress(email).orElseThrow(
                 ()-> new RuntimeException("Agent email "+email+" not found")
         );
-        return agentTable;
+        return agentTableList;
     }
 }

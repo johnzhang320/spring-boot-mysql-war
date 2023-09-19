@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57abfbbc-54b0-43cc-ab4d-67fc0010e3d3" name="Changes" comment="Jenkins build and deploy to tomcat">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/boot/mysql/war/controller/DockerAppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/boot/mysql/war/controller/DockerAppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/boot/mysql/war/controller/DockerAppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/boot/mysql/war/controller/DockerAppController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
