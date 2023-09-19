@@ -43,9 +43,18 @@ public class DockerAppController {
     }
     @GetMapping("/findByUsername/{username}")
     @ResponseStatus(HttpStatus.OK)
-    public AgentTable findUsersById(@PathVariable String username) {
+    public AgentTable findUsersByUserName(@PathVariable String username) {
         AgentTable agentTable= agentTableRepository.findAgentTableByUserName(username).orElseThrow(
                 ()-> new RuntimeException("Agent username "+username+" not found")
+        );
+        return agentTable;
+    }
+
+    @GetMapping("/findByEmail/{email}")
+    @ResponseStatus(HttpStatus.OK)
+    public AgentTable findUsersByEmail(@PathVariable String email) {
+        AgentTable agentTable= agentTableRepository.findAgentTableByUserName(email).orElseThrow(
+                ()-> new RuntimeException("Agent email "+email+" not found")
         );
         return agentTable;
     }
