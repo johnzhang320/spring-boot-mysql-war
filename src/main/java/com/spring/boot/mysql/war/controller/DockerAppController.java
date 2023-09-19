@@ -32,4 +32,21 @@ public class DockerAppController {
         List<AgentTable> agentTableList= agentTableRepository.findAll();
         return agentTableList;
     }
+
+    @GetMapping("/findById/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public AgentTable findUsersById(@PathVariable Integer id) {
+        AgentTable agentTable= agentTableRepository.findAgentTableByAgentId(id).orElseThrow(
+                ()-> new RuntimeException("Agent Id "+id+" not found")
+        );
+        return agentTable;
+    }
+    @GetMapping("/findByUsername/{username}")
+    @ResponseStatus(HttpStatus.OK)
+    public AgentTable findUsersById(@PathVariable String username) {
+        AgentTable agentTable= agentTableRepository.findAgentTableByUserName(username).orElseThrow(
+                ()-> new RuntimeException("Agent username "+username+" not found")
+        );
+        return agentTable;
+    }
 }
