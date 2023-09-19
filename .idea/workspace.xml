@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57abfbbc-54b0-43cc-ab4d-67fc0010e3d3" name="Changes" comment="Jenkins build and deploy to tomcat">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/boot/mysql/war/controller/DockerAppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/boot/mysql/war/controller/DockerAppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/boot/mysql/war/controller/DockerAppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/boot/mysql/war/controller/DockerAppController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/boot/mysql/war/model/AgentTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/boot/mysql/war/model/AgentTable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-boot-mysql-war.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-boot-mysql-war.war.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-boot-mysql-war.war.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-boot-mysql-war/WEB-INF/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-boot-mysql-war/WEB-INF/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-boot-mysql-war/WEB-INF/classes/com/spring/boot/mysql/war/model/AgentTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-boot-mysql-war/WEB-INF/classes/com/spring/boot/mysql/war/model/AgentTable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.spring.boot.mysql.war.SpringBootMysqlWarApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.spring.boot.mysql.war.SpringBootMysqlWarApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.spring.boot.mysql.war.SpringBootMysqlWarApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.spring.boot.mysql.war.SpringBootMysqlWarApplicationTests.txt" afterDir="false" />
-    </list>
+    <list default="true" id="57abfbbc-54b0-43cc-ab4d-67fc0010e3d3" name="Changes" comment="Jenkins build and deploy to tomcat" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
